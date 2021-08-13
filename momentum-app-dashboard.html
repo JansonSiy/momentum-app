@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Momentum App Dashboard Page</title>
+        <link rel="stylesheet" href="momentum-app.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="dashboardCon">
+            <header>
+                <div id="greetUser"></div>
+                <div id="clockDisplay"></div>
+            </header>
+            <section class="mainFocus">
+                <div id="focusDisplay">What's your MAIN FOCUS<br>for today?</div>
+                <div class="mainFocusSub">
+                    <input type="text" id="focusInput" value=""/>
+                    <div>
+                        <button onclick="getFocusValue()">post</button>
+                        <button onclick="resetFocusValue()">reset</button>
+                    </div>
+                </div>
+            </section>
+            <section class="toDo">
+                <div class="toDoLeftCon">
+                    <input id="inputToDo" type="text">
+                    <div>
+                        <button id="addToDo">add</button>
+                        <button id="clearToDo">clear</button>
+                    </div>
+                </div>
+                <div class="toDoRightCon">
+                    <div class="toDoTitle">To Do List</div>
+                    <div id="displayToDo"></div>
+                </div>
+            </section>
+            <section class="quotes">
+                <div class="quoteDisplay">
+                    <div id="displayQuote">The best way to finish an unpleasant task is to get started. - Anonymous</div>
+                    <button onclick="randomQuotes()">roll</button>
+                </div>
+                <div>
+                    <input id="inputQuote" type="text" value=""/>
+                    <button onclick="addQuote()">quote</button>
+                </div>
+            </section>
+            <footer>
+                <h2>Copyright© A project by Janson Siy | All rights reserved.</h2>
+            </footer>
+        </main>
+        <script src="momentum-app.js"></script>
+    </body>
+</html>
